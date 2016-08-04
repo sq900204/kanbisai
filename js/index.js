@@ -6,4 +6,7 @@ window.onload = function(){
        mouseWheel:true,
        scrollbars:true
    });
+   $(".iScrollVerticalScrollbar").css({
+       opacity:0.3
+   })
 }
