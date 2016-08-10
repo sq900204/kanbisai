@@ -2,6 +2,10 @@ html,body{
     color:#000;
     font:12px "Microsoft YaHei", Arial;
     background:#f4f4f4;
+    overflow:hidden;
+}
+ul{
+    margin:0;
 }
 header{
     height:63px;
@@ -86,8 +90,14 @@ header ul>li.clickon a{
     color:#fff;
 }
 .content{
+    height:752px;
     width:1040px;
     margin:10px auto 0;
+}
+nav{
+    height:100%;
+    width:198px;
+    float:left;
 }
 .nav{
     max-height:752px;
@@ -119,7 +129,7 @@ header ul>li.clickon a{
 }
 .nav ul li i{
     position:absolute;
-    right:0px;
+    right:0;
     top:20px;
     height:20px;
     width:40px;
@@ -147,8 +157,126 @@ header ul>li.clickon a{
 .nav ul li.bg i:before,.nav ul li.bg i:after{
     display:block;
 }
+#nav .iScrollVerticalScrollbar{
+    visibility:hidden;
+}
+#nav:hover .iScrollVerticalScrollbar{
+    visibility:visible;
+}
 
+.section{
+    height:100%;
+    width:820px;
+    float:left;
+    margin-left:20px;
+}
+#section{
+    position:relative;
+}
+#section .iScrollVerticalScrollbar{
+     visibility:hidden;
+ }
+#section:hover .iScrollVerticalScrollbar{
+    visibility:visible;
+}
+.section h4{
+    margin:0;
+    height:20px;
+    padding:10px 0;
+    font-weight:400;
+    line-height:20px;
+    border:1px solid #eee;
+    background:#fff;
+}
+.section h4.on p{
+    margin:0;
+    padding-left:15px;
+    border-left:5px solid red;
+    font-weight:700;
+    font-size:16px;
+}
 
+.game-list{
+    display:block;
+    height:60px;
+    background:#fff;
+    font-size:16px;
+    line-height:60px;
+    border-bottom:1px solid #eee;
+    padding:0;
+    margin:0;
+}
+.game-list li:nth-child(1){
+    width:15%;
+}
+.game-list li:nth-child(2){
+    width:18%;
+}
+.game-list li:nth-child(3){
+    width:47%;
+}
+.game-list li:nth-child(4){
+    width:18%;
+    color:#3374e0;
+}
+.game-list li{
+    display:inline-block;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.game-list li img{
+    height:40px;
+    width:43px;
+    vertical-align:middle;
+    margin-left:5px;
+    margin-right:10px;
+}
+.game-list li i{
+    padding-right:5px;
+}
+.game-list li span{
+    color:#999;
+}
+.section h4.off{
+    margin-top:40px;
+    height:20px;
+    font-weight:700;
+    font-size:18px;
+}
+.section h4.off p{
+    margin:0;
+    padding-left:15px;
+    border-left:5px solid #ccc;
+}
+.section .game-list .match{
+    display:inline-block;
+    margin:0 15px;
+    color:#3374e0;
+    font-size:18px;
+}
+.section .game-list .stackIcon{
+    position:relative;
+    height:60px;
+}
+.section .game-list .stackIcon span{
+    display:inline-block;
+    line-height:100%;
+    color:#346aff;
+}
+.section .game-list .stackIcon span:nth-child(1){
+    position:absolute;
+    top:10%;
+    left:0;
+}
+.section .game-list .stackIcon span:nth-child(2){
+    position:absolute;
+    top:60%;
+    left:0;
+}
+.iScrollIndicator{
+    display:block;
+}
 
 
 

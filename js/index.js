@@ -6,6 +6,10 @@ window.onload = function(){
        mouseWheel:true,
        scrollbars:true
    });
+    var sectionScroll = new IScroll("#section",{
+        mouseWheel:true,
+        scrollbars:true
+    });
    $(".iScrollVerticalScrollbar").css({
        opacity:0.3
    })
