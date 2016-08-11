@@ -9,6 +9,8 @@ ul{
 }
 header{
     height:63px;
+    position:relative;
+    z-index:2;
 }
 a{
     text-decoration:none;
@@ -17,7 +19,7 @@ a{
 
 header .header{
     position:fixed;
-    top:0;
+    top:8px;
     left:0;
     width:100%;
     border-bottom:1px solid #ddd;
@@ -47,25 +49,22 @@ li.logo a{
 }
 li.tabList>a{
     width:90px;
+    height:55px;
     border-top:4px solid transparent;
     border-bottom:4px solid transparent;
     line-height:50px;
     font-size:16px;
     text-align:center;
 }
-li.tabList:hover a{
+li.tabList:hover>a{
     border-top-color:#346aff;
 }
 li.code .dlCode{
-    position:relative;
-    display:none;
-    height:93px;
     padding-top:90px;
     text-align:center;
-    z-index:2;
-    /*background:url("../images/weixin_6a9b86.jpg") no-repeat #fff;*/
-    background:red;
-    /*opacity:0.8;*/
+    background:url("../images/weixin_6a9b86.jpg") no-repeat #fff;
+    opacity:0.8;
+    display:none;
 }
 li.code:hover .dlCode{
     display:block;
