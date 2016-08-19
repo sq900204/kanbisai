@@ -279,5 +279,58 @@ nav{
     display:block;
 }
 
+.content .qrCode{
+    position:absolute;
+    right:80px;
+    top:97px;
+}
+.content .rightCode{
+    border:1px solid #dedede;
+    padding-top:20px;
+    height:150px;
+    width:130px;
+    background:#fff;
+    text-align:center;
+    position:relative;
+    margin-top:20px;
+}
+.rightCode .close{
+    position:absolute;
+    top:2px;
+    right:3px;
+    font-size:20px;
+    color:#ccc;
+}
+.rightCode p{
+    font-size:14px;
+    margin:0;
+    line-height:22px;
+}
+.content .fixedMenu{
+    position:fixed;
+    right:80px;
+    bottom:20px;
+}
+.content a#feedback{
+    opacity:0.8;
+    filter:"alpha(80)";
+    display:block;
+    height:60px;
+    width:60px;
+    background:url("../images/icon-feedback_e2a6ed.png") 14px 14px no-repeat lightblue;
+    color:transparent;
+}
+.content a#feedback.over{
+    height:40px;
+    width:40px;
+    background:#3374e0;
+    color:#fff;
+    padding:10px;
+    font-size:16px;
+    line-height:20px;
+    text-align:center;
+}
+
+
 
 
